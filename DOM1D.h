@@ -80,7 +80,7 @@ void DOM_1D(double Tw1, double Tw2, double e1, double e2, double Tg, double ka, 
 				}	
 			}
 				
-			BICGSTAB(AA, I, B);		//
+			BICGSTAB(AA, I, B);		// BICGSTAB, Biconjugate gradient stabilized method, this function is not showed in this code, this is a very common algorithm;
 			
 			for (int i = 0; i < na; ++ i){
 				Im[i][id] = I[i];
