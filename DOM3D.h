@@ -1,6 +1,6 @@
 /********************************************************
 This code can solve 3D cube radiation heat transfer; 
-Input:  1£¬Wall temperature£ºTw1, Tw2, Tw3, Tw4, Tw5, Tw6(K); 
+Input:  1Â£Â¬Wall temperatureÂ£ÂºTw1, Tw2, Tw3, Tw4, Tw5, Tw6(K); 
 		2, Wall emissivity: e1, e2, e3, e4, e5, e6;
         3, Medium temperature: *Tg(K);
 		4, Medium absorption coefficient: *ka(m-1);
@@ -9,9 +9,9 @@ Input:  1£¬Wall temperature£ºTw1, Tw2, Tw3, Tw4, Tw5, Tw6(K);
 		7, Number of grids: Nx, Ny, Nz;
 		S-6 Solution and Ladder format (fx = 1)
 ********************************************************
-Output: 1, Incident radiation£º*G(Wm-2);
-        2, Radiation heat flux£º*q(Wm-2);
-        3, Radiation source term£º(Wm-3);
+Output: 1, Incident radiationÂ£Âº*G(Wm-2);
+        2, Radiation heat fluxÂ£Âº*q(Wm-2);
+        3, Radiation source termÂ£Âº(Wm-3);
 *******************************************************/
 #include <stdio.h>
 #include <stdlib.h>
@@ -22,10 +22,6 @@ Output: 1, Incident radiation£º*G(Wm-2);
 #define M 6							// S-6 Solution;
 #define N (M * (M + 2))				// Number of total direction 
 #define PI 3.141593
-
-void BICGSTAB(double *A, double *I, double *B){
-	
-}
 
 double xi[] = {	0.1838670, 0.1838670, 0.1838670, 0.6950514, 0.6950514, 0.9656013,
 				0.1838670, 0.1838670, 0.1838670, 0.6950514, 0.6950514, 0.9656013,
