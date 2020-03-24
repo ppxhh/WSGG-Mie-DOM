@@ -1,5 +1,5 @@
 /********************************************************
-Input:  1£¬Wall temperature£ºTw1, Tw2(K); 
+Input:  1Â£Â¬Wall temperatureÂ£ÂºTw1, Tw2(K); 
 		2, Wall emissivity: e1, e2;
         3, Medium temperature: Tg(K);
 		4, Medium absorption coefficient: ka(m-1);
@@ -8,9 +8,9 @@ Input:  1£¬Wall temperature£ºTw1, Tw2(K);
 		7, Number of grids: Nx;
 		S-8 Solution and Ladder format (fx = 1)
 ********************************************************
-Output: 1, Incident radiation£ºG(Wm-2);
-        2, Radiation heat flux£ºq(Wm-2);
-        3, Radiation source term£º(Wm-3);
+Output: 1, Incident radiationÂ£ÂºG(Wm-2);
+        2, Radiation heat fluxÂ£Âºq(Wm-2);
+        3, Radiation source termÂ£Âº(Wm-3);
 *******************************************************/
 
 #include <stdio.h>
@@ -23,10 +23,6 @@ Output: 1, Incident radiation£ºG(Wm-2);
 
 double Xi[] = {0.1422555, 0.5773503, 0.8040087, 0.9795543, -0.1422555, -0.5773503, -0.8040087, -0.9795543};
 double Omega[] = {2.1637144, 2.6406988, 0.7938272, 0.6849436, 2.1637144, 2.6406988, 0.7938272, 0.6849436};
-
-void BICGSTAB(double *A, double *I, double *B){
-	
-}
 
 void DOM_1D(double Tw1, double Tw2, double e1, double e2, double Tg, double ka, double ks, double L, int Nx, double *G, double *q, double *dq){
 	double Deltx = L / Nx;		// Mesh size;
